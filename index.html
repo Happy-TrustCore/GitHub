@@ -1,0 +1,1395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy TrustCore Technologies | Web Development Berlin</title>
+
+    <meta
+      name="description"
+      content="Happy TrustCore Technologies builds websites, web applications, and automation solutions in Berlin."
+    />
+
+    <meta name="author" content="Happy TrustCore Technologies" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <!-- Social Previews (Open Graph / Twitter Card) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Happy TrustCore Technologies" />
+    <meta property="og:title" content="Happy TrustCore Technologies | Web Development Berlin" />
+    <meta
+      property="og:description"
+      content="Happy TrustCore Technologies builds websites, web applications, and automation solutions in Berlin."
+    />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Happy TrustCore Technologies | Web Development Berlin" />
+    <meta
+      name="twitter:description"
+      content="Happy TrustCore Technologies builds websites, web applications, and automation solutions in Berlin."
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome Icons (loaded non-render-blocking) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0"
+      crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0"
+        crossorigin="anonymous"
+      />
+    </noscript>
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- HEADER -->
+
+    <header>
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+
+        <span>
+          HAPPY TRUSTCORE
+          <br />
+          <small>TECHNOLOGIES</small>
+        </span>
+      </div>
+
+      <nav>
+  <ul>
+    <li><a href="#home" data-i18n="home">Home</a></li>
+    <li><a href="#about" data-i18n="about">About</a></li>
+    <li><a href="#services" data-i18n="services">Services</a></li>
+    <li><a href="#pricing" data-i18n="pricingNav">Pricing</a></li>
+    <li><a href="#portfolio" data-i18n="portfolio">Portfolio</a></li>
+    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+
+    <li>
+      <button id="languageToggle" class="language-btn">
+        🇩🇪 Deutsch
+      </button>
+    </li>
+  </ul>
+</nav>
+    </header>
+
+    <main class="container">
+      <!-- HERO SECTION -->
+
+      <section id="home" class="hero">
+        <div class="hero-left">
+          <div class="hero-label">
+            <i class="fa-solid fa-code"></i>
+            <span data-i18n="heroLabel">SOFTWARE DEVELOPMENT SERVICE</span>
+          </div>
+
+         <h1 data-i18n="heroTitle">
+Websites, Web Apps & AI Tools, Built By Two Developers In Berlin.
+</h1>
+
+<p class="subtitle" data-i18n="heroSubtitle">
+We help startups, freelancers, and small businesses build fast, 
+  professional digital solutions using modern web technologies, 
+  automation, and artificial intelligence.
+</p>
+          <div class="hero-badges">
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-i18n="badgeLocation">Berlin, Germany</span>
+            </span>
+
+            <span>
+              <i class="fa-solid fa-truck-fast"></i>
+              <span data-i18n="badgeDelivery">Fast Delivery</span>
+            </span>
+
+            <span>
+              <i class="fa-solid fa-tag"></i>
+              <span data-i18n="badgeReliable">Fixed-Price Projects</span>
+            </span>
+          </div>
+
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary" data-i18n="ctaPrimary"> Request A Project </a>
+
+            <a href="#portfolio" class="btn btn-secondary" data-i18n="ctaSecondary"> View Portfolio </a>
+          </div>
+        </div>
+
+<div class="founders-stack">
+
+    <h2 class="sr-only">Our Founders</h2>
+
+    <!-- Emran -->
+    <div class="founder-card fade-up">
+        <div class="founder-avatar">
+            <img src="images/emran.jpg" alt="Emran Azizi" width="200" height="200">
+        </div>
+
+        <div class="founder-info">
+            <h3>Emran Azizi</h3>
+
+            <div class="role" data-i18n="founderEmranRole">Software Engineer</div>
+
+            <p data-i18n="founderEmranDesc">
+                Likes taking a project from idea to a working,
+                deployed product — see his portfolio below.
+            </p>
+
+            <a href="https://emranaziziwebsite.github.io/Portfolio/" class="portfolio-link" target="_blank" data-i18n="portfolioLinkText">
+                View Our Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- Patrick -->
+    <div class="founder-card fade-up">
+        <div class="founder-avatar">
+            <img src="images/patrick.jpg" alt="Patrick Thompson" width="300" height="400">
+        </div>
+
+        <div class="founder-info">
+            <h3>Patrick Thompson</h3>
+
+            <div class="role" data-i18n="founderPatrickRole">Computer Science Student</div>
+
+            <p data-i18n="founderPatrickDesc">
+                Builds full-stack projects end to end — from a
+                from-scratch scientific calculator to a football
+                match predictor with a trained ML model.
+            </p>
+
+            <a href="https://pattson22.github.io/" class="portfolio-link" target="_blank" data-i18n="portfolioLinkText">
+                View Our Portfolio
+            </a>
+        </div>
+    </div>
+
+</div>
+      </section>
+
+   <!-- ABOUT SECTION -->
+
+<section id="about" class="section">
+
+<div class="section-header fade-up">
+
+<h2 data-i18n="aboutHeading">ABOUT HAPPY TRUSTCORE</h2>
+
+<p data-i18n="aboutSubheading">
+Berlin-based developers building websites, applications, and automation tools.
+</p>
+
+</div>
+
+<div class="glass-panel fade-up">
+
+<h3 data-i18n="aboutPanelTitle">
+From Coursework To Client Projects
+</h3>
+
+<p data-i18n="aboutPanelText1">
+Happy TrustCore Technologies is founded by Emran Azizi and
+Patrick Thompson, software engineering and computer science students based
+in Berlin. We apply what we're learning in school, plus self-taught skills
+and real project work — like the projects in our portfolio below — to
+build software for businesses, startups, and individuals.
+</p>
+
+<p data-i18n="aboutPanelText2">
+Our goal is simple: working, well-tested software — websites, web apps,
+automation, and AI tools — at a price that makes sense for a startup or
+small business, without cutting corners on quality.
+</p>
+
+</div>
+
+<!-- DEVELOPMENT SKILLS -->
+
+<div class="stack-container">
+
+<div class="stack-item fade-up">
+
+<i class="fa-brands fa-react"></i>
+
+<div>
+
+<h3 data-i18n="stackFrontendTitle">
+Frontend Development
+</h3>
+
+<p data-i18n="stackFrontendDesc">
+React, Next.js, JavaScript, HTML5, CSS3,
+and TypeScript.
+</p>
+
+</div>
+
+</div>
+
+<div class="stack-item fade-up">
+
+<i class="fa-solid fa-server"></i>
+
+<div>
+
+<h3 data-i18n="stackBackendTitle">
+Backend Development
+</h3>
+
+<p data-i18n="stackBackendDesc">
+Node.js, Python, APIs, server solutions,
+and backend architecture.
+</p>
+
+</div>
+
+</div>
+
+<div class="stack-item fade-up">
+
+<i class="fa-solid fa-database"></i>
+
+<div>
+
+<h3 data-i18n="stackDatabaseTitle">
+Database Solutions
+</h3>
+
+<p data-i18n="stackDatabaseDesc">
+SQL, PostgreSQL, MongoDB, database design,
+and data management.
+</p>
+
+</div>
+
+</div>
+
+<div class="stack-item fade-up">
+
+<i class="fa-solid fa-cloud"></i>
+
+<div>
+
+<h3 data-i18n="stackCloudTitle">
+Cloud & Development Tools
+</h3>
+
+<p data-i18n="stackCloudDesc">
+Git, GitHub, Docker, Linux,
+and cloud deployment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+      <!-- SERVICES -->
+
+<section id="services" class="section">
+
+  <div class="section-header fade-up">
+    <h2 data-i18n="servicesHeading">OUR SERVICES</h2>
+
+    <p data-i18n="servicesSubheading">
+      Websites, applications, and automation — scoped and priced for startups, freelancers, and small businesses.
+    </p>
+  </div>
+
+  <div class="grid-3">
+
+    <!-- SERVICE 1 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-globe"></i>
+
+      <h3 data-i18n="service1Title">Business Websites</h3>
+
+      <p data-i18n="service1Desc">
+        A responsive website that loads fast, works on any device,
+        and gives customers a reason to trust your business.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 2 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-arrows-rotate"></i>
+
+      <h3 data-i18n="service2Title">Website Redesign</h3>
+
+      <p data-i18n="service2Desc">
+        We rebuild outdated websites into fast, mobile-friendly
+        sites with cleaner design and better usability.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 3 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-laptop-code"></i>
+
+      <h3 data-i18n="service3Title">Web Applications</h3>
+
+      <p data-i18n="service3Desc">
+        Custom dashboards, booking systems, and internal tools
+        built around how your business actually works.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 4 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-microchip"></i>
+
+      <h3 data-i18n="service4Title">AI & Automation</h3>
+
+      <p data-i18n="service4Desc">
+        Automation scripts and AI-assisted tools that take
+        repetitive manual work off your plate.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 5 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-cloud-arrow-up"></i>
+
+      <h3 data-i18n="service5Title">Cloud Deployment</h3>
+
+      <p data-i18n="service5Desc">
+        We deploy and configure your app on a reliable cloud
+        platform, so it stays fast and online as you grow.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 6 -->
+
+    <div class="service-item fade-up">
+
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+
+      <h3 data-i18n="service6Title">Website Support</h3>
+
+      <p data-i18n="service6Desc">
+        Ongoing updates, fixes, and technical support after launch
+        — so you're never stuck when something breaks.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- PRICING -->
+
+<section id="pricing" class="section">
+
+  <div class="section-header fade-up">
+    <h2 data-i18n="pricingHeading">PRICING</h2>
+
+    <p data-i18n="pricingSubheading">
+      One-Time Service Packages (€160 / €299 / €400 flat payment).
+    </p>
+
+    <p class="pricing-note" data-i18n="pricingNoSub">
+      No subscriptions — every package is a flat, one-time payment.
+    </p>
+  </div>
+
+  <div class="grid-3">
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€160</span>
+      <h3 data-i18n="package1Name">Starter</h3>
+      <p data-i18n="package1Desc">Best for a small business or single-page website.</p>
+      <div class="price-payment-note" data-i18n="packagePaymentNote">One-time payment</div>
+    </div>
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€299</span>
+      <h3 data-i18n="package2Name">Business</h3>
+      <p data-i18n="package2Desc">A full multi-page business website or a website redesign.</p>
+      <div class="price-payment-note" data-i18n="packagePaymentNote">One-time payment</div>
+    </div>
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€400</span>
+      <h3 data-i18n="package3Name">Advanced</h3>
+      <p data-i18n="package3Desc">A custom web application, automation, or AI-powered solution.</p>
+      <div class="price-payment-note" data-i18n="packagePaymentNote">One-time payment</div>
+    </div>
+
+  </div>
+
+  <div class="huge-projects-banner fade-up">
+    <div>
+      <div class="huge-projects-tag" data-i18n="customQuote">Custom Quote</div>
+      <p data-i18n="hugeProjectsDesc">Huge Projects or Custom Enterprise Software? Talk with our team.</p>
+    </div>
+    <a href="#contact" class="btn btn-primary" data-i18n="hugeProjectsCta">Talk with Team</a>
+  </div>
+
+  <div class="section-header care-header fade-up">
+    <h3 data-i18n="careHeading">Post-Project Care</h3>
+  </div>
+
+  <div class="grid-3">
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€0</span>
+      <h3 data-i18n="care1Title">2 Months Free</h3>
+      <p data-i18n="care1Desc">2 Months Free Service included after every completed project.</p>
+      <div class="price-payment-note" data-i18n="care1PriceLabel">Free — included</div>
+    </div>
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€121</span>
+      <h3 data-i18n="care2Title">6 Months Service Plan</h3>
+      <p data-i18n="care2Desc">6 Months Extended Service Plan for a one-time fee of €121.</p>
+      <div class="price-payment-note" data-i18n="packagePaymentNote">One-time payment</div>
+    </div>
+
+    <div class="card glass-card price-card fade-up">
+      <span class="price-value">€200</span>
+      <h3 data-i18n="care3Title">1 Year Premium Service</h3>
+      <p data-i18n="care3Desc">1 Year Extended Service Package (€200) – more services available.</p>
+      <div class="price-payment-note" data-i18n="packagePaymentNote">One-time payment</div>
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- WHY WORK WITH US -->
+
+<section class="section">
+
+  <div class="section-header fade-up">
+
+    <h2 data-i18n="whyHeading">WHY WORK WITH US</h2>
+
+    <p data-i18n="whySubheading">
+      Two students from Berlin who treat every project like it's going on our own portfolio.
+    </p>
+
+  </div>
+
+  <div class="feature-list">
+
+    <div class="feature-row fade-up">
+
+      <div class="feature-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+
+      <div class="feature-text">
+        <h3 data-i18n="why1Title">Berlin Student Developers</h3>
+
+        <p data-i18n="why1Desc">
+          We're currently studying software engineering and computer science
+          in Berlin, and we apply what we learn directly to client work —
+          not just class projects.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="feature-row fade-up">
+
+      <div class="feature-icon">
+        <i class="fa-solid fa-code-branch"></i>
+      </div>
+
+      <div class="feature-text">
+        <h3 data-i18n="why2Title">Clean, Maintainable Code</h3>
+
+        <p data-i18n="why2Desc">
+          We write code the way we'd want to inherit it — organized,
+          documented where it matters, and free of dead links or
+          broken features.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="feature-row fade-up">
+
+      <div class="feature-icon">
+        <i class="fa-solid fa-piggy-bank"></i>
+      </div>
+
+      <div class="feature-text">
+        <h3 data-i18n="why3Title">Affordable Solutions</h3>
+
+        <p data-i18n="why3Desc">
+          Flat, one-time pricing with no subscriptions — a fraction
+          of typical agency rates, without cutting corners.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COMPANY HIGHLIGHTS -->
+
+<section class="section">
+
+<div class="stats-bar">
+
+<div class="stat-item fade-up">
+
+<h2>
+Berlin
+</h2>
+
+<p data-i18n="statBerlinDesc">
+Based in Germany
+</p>
+
+</div>
+
+<div class="stat-divider"></div>
+
+<div class="stat-item fade-up">
+
+<h2>
+5+
+</h2>
+
+<p data-i18n="stat2Desc">
+Core Technologies
+</p>
+
+</div>
+
+<div class="stat-divider"></div>
+
+<div class="stat-item fade-up">
+
+<h2>
+12h
+</h2>
+
+<p data-i18n="stat3Desc">
+Response Time Goal
+</p>
+
+</div>
+
+<div class="stat-divider"></div>
+
+<div class="stat-item fade-up">
+
+<h2>
+2
+</h2>
+
+<p data-i18n="stat4Desc">
+Student Founders
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DEVELOPMENT PROCESS -->
+
+<section id="process" class="section">
+
+<div class="section-header fade-up">
+
+<h2 data-i18n="processHeading">OUR DEVELOPMENT PROCESS</h2>
+
+<p data-i18n="processSubheading">
+How a project moves from your first message to a finished product.
+</p>
+
+</div>
+
+<div class="process-timeline">
+
+<div class="process-step fade-up">
+
+<div class="process-number">01</div>
+
+<div class="process-content">
+<h3 data-i18n="process1Title">Discussion</h3>
+
+<p data-i18n="process1Desc">
+Understanding your idea, goals, and project requirements.
+</p>
+</div>
+
+</div>
+
+<div class="process-step fade-up">
+
+<div class="process-number">02</div>
+
+<div class="process-content">
+<h3 data-i18n="process2Title">Planning</h3>
+
+<p data-i18n="process2Desc">
+Choosing the right technology and creating a development roadmap.
+</p>
+</div>
+
+</div>
+
+<div class="process-step fade-up">
+
+<div class="process-number">03</div>
+
+<div class="process-content">
+<h3 data-i18n="process3Title">Design</h3>
+
+<p data-i18n="process3Desc">
+Creating clean layouts and user-friendly experiences.
+</p>
+</div>
+
+</div>
+
+<div class="process-step fade-up">
+
+<div class="process-number">04</div>
+
+<div class="process-content">
+<h3 data-i18n="process4Title">Development</h3>
+
+<p data-i18n="process4Desc">
+Writing and testing the actual code for your project.
+</p>
+</div>
+
+</div>
+
+<div class="process-step fade-up">
+
+<div class="process-number">05</div>
+
+<div class="process-content">
+<h3 data-i18n="process5Title">Testing</h3>
+
+<p data-i18n="process5Desc">
+Checking functionality, performance, and quality.
+</p>
+</div>
+
+</div>
+
+<div class="process-step fade-up">
+
+<div class="process-number">06</div>
+
+<div class="process-content">
+<h3 data-i18n="process6Title">Deployment</h3>
+
+<p data-i18n="process6Desc">
+Launching the product and helping with future improvements.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OUR SKILLS -->
+
+<section id="technologies" class="section">
+
+<div class="section-header fade-up">
+
+<h2 data-i18n="techHeading">OUR DEVELOPMENT SKILLS</h2>
+
+<p data-i18n="techSubheading">
+The languages, frameworks, and tools behind everything we build.
+</p>
+
+</div>
+
+<div class="skills-list">
+
+<div class="skill-group fade-up">
+
+<div class="skill-heading">
+<i class="fa-solid fa-globe"></i>
+<h3 data-i18n="tech1Title">Website Development</h3>
+</div>
+
+<div class="skill-tags">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>React</span>
+<span>Next.js</span>
+</div>
+
+</div>
+
+<div class="skill-group fade-up">
+
+<div class="skill-heading">
+<i class="fa-solid fa-code"></i>
+<h3 data-i18n="tech2Title">Web Applications</h3>
+</div>
+
+<p data-i18n="tech2Desc">
+Frontend applications, dashboards, APIs, and business tools.
+</p>
+
+</div>
+
+<div class="skill-group fade-up">
+
+<div class="skill-heading">
+<i class="fa-solid fa-microchip"></i>
+<h3 data-i18n="tech3Title">Automation & AI</h3>
+</div>
+
+<p data-i18n="tech3Desc">
+Python automation, API integration, and AI-powered solutions.
+</p>
+
+</div>
+
+<div class="skill-group fade-up">
+
+<div class="skill-heading">
+<i class="fa-solid fa-cloud"></i>
+<h3 data-i18n="tech4Title">Development Tools</h3>
+</div>
+
+<div class="skill-tags">
+<span>Git</span>
+<span>GitHub</span>
+<span>Cloud Platforms</span>
+<span>Deployment Workflow</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- PROJECTS SECTION -->
+
+<section id="portfolio" class="section">
+
+  <div class="section-header fade-up">
+
+    <h2 data-i18n="portfolioHeading">OUR PROJECTS</h2>
+
+    <p data-i18n="portfolioSubheading">
+      A look at what we've actually shipped — code included.
+    </p>
+
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+
+<div class="projects-grid">
+
+  <!-- PROJECT 1 -->
+
+  <div class="project-card fade-up">
+
+    <div class="project-image">
+      <i class="fa-solid fa-utensils"></i>
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="proj1Category">Website Development</span>
+
+      <h3>Restaurant Website</h3>
+
+      <p data-i18n="proj1Desc">
+        A responsive restaurant website with menu and booking —
+        still in development.
+      </p>
+
+      <div class="project-tech">
+
+        <small>HTML</small>
+        <small>CSS</small>
+        <small>JavaScript</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-globe"></i>
+          <span data-i18n="btnViewWebsite">View Website</span>
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="btnCertificate">Certificate</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PROJECT 2 -->
+
+  <div class="project-card fade-up">
+
+    <div class="project-image">
+
+      <i class="fa-solid fa-calculator"></i>
+
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="proj2Category">Application Development</span>
+
+      <h3>Scientific Calculator</h3>
+
+      <p data-i18n="proj2Desc">
+        A vanilla-JS scientific calculator with a hand-written expression
+        parser (no eval()), equation solving, and graphing — also
+        packaged as a Windows desktop app.
+      </p>
+
+      <div class="project-tech">
+
+        <small>JavaScript</small>
+        <small>Algorithms</small>
+        <small>UI Design</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" class="project-btn">
+          <i class="fa-solid fa-play"></i>
+          <span data-i18n="btnTryApp">Try Application</span>
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="btnCertificate">Certificate</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PROJECT 3 -->
+
+  <div class="project-card fade-up">
+
+    <div class="project-image">
+
+      <i class="fa-solid fa-futbol"></i>
+
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="proj3Category">Data Analysis Application</span>
+
+      <h3>Football Analyzer</h3>
+
+      <p data-i18n="proj3Desc">
+        A Flask + XGBoost web app that predicts football match outcomes
+        using live odds, Elo ratings, and team form across six
+        European leagues.
+      </p>
+
+      <div class="project-tech">
+
+        <small>Python</small>
+        <small>Data Analysis</small>
+        <small>APIs</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" class="project-btn">
+          <i class="fa-solid fa-chart-line"></i>
+          <span data-i18n="btnViewProject">View Project</span>
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="btnCertificate">Certificate</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- VIEW ALL BUTTON -->
+
+<button id="openProjects" class="btn btn-primary view-projects-btn" data-i18n="btnViewAllProjects">
+  View All Projects
+</button>
+
+<!-- ========================= -->
+<!-- ALL PROJECTS PANEL -->
+<!-- ========================= -->
+
+<div id="projectsOverlay" class="projects-overlay">
+
+  <div class="projects-window">
+
+    <button id="closeProjects" class="close-projects" aria-label="Close projects panel">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h2 data-i18n="overlayHeading">Our Projects</h2>
+
+    <!-- SEARCH -->
+
+    <input
+      type="text"
+      class="project-search"
+      placeholder="Search projects..."
+      data-i18n-placeholder="searchPlaceholder"
+    >
+
+    <!-- FILTERS -->
+
+    <div class="project-filter">
+
+      <button class="active" data-filter="All" data-i18n="filterAll">All</button>
+
+      <button data-filter="Websites" data-i18n="filterWebsites">Websites</button>
+
+      <button data-filter="Applications" data-i18n="filterApplications">Applications</button>
+
+      <button data-filter="Automation" data-i18n="filterAutomation">Automation</button>
+
+    </div>
+
+    <!-- PROJECT GRID -->
+
+<div class="all-projects">
+
+  <!-- Restaurant Website -->
+
+  <div class="project-card small" data-category="Websites">
+
+    <div class="project-image">
+      <i class="fa-solid fa-utensils"></i>
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="catWebsiteSmall">Website</span>
+
+      <h3>Restaurant Website</h3>
+
+      <p data-i18n="smallDesc1">
+        Responsive restaurant site with menu, contact,
+        and booking — in development.
+      </p>
+
+      <div class="project-tech">
+
+        <small>HTML</small>
+        <small>CSS</small>
+        <small>JavaScript</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-globe"></i>
+          <span data-i18n="btnWebsiteShort">Website</span>
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="btnCertificate">Certificate</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Scientific Calculator -->
+
+  <div class="project-card small" data-category="Applications">
+
+    <div class="project-image">
+      <i class="fa-solid fa-calculator"></i>
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="catApplicationSmall">Application</span>
+
+      <h3>Scientific Calculator</h3>
+
+      <p data-i18n="smallDesc2">
+        Vanilla-JS scientific calculator with equation solving
+        and graphing — no frameworks, no eval().
+      </p>
+
+      <div class="project-tech">
+
+        <small>JavaScript</small>
+        <small>Math</small>
+        <small>UI</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" class="project-btn">
+
+          <i class="fa-solid fa-play"></i>
+
+          <span data-i18n="btnViewApp">View App</span>
+
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+
+          <i class="fa-solid fa-certificate"></i>
+
+          <span data-i18n="btnCertificate">Certificate</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Football Analyzer -->
+
+  <div class="project-card small" data-category="Automation">
+
+    <div class="project-image">
+
+      <i class="fa-solid fa-futbol"></i>
+
+    </div>
+
+    <div class="project-info">
+
+      <span data-i18n="catAutomationSmall">Automation</span>
+
+      <h3>Football Analyzer</h3>
+
+      <p data-i18n="smallDesc3">
+        Flask + XGBoost app predicting match outcomes from
+        live odds and team form.
+      </p>
+
+      <div class="project-tech">
+
+        <small>Python</small>
+        <small>AI</small>
+        <small>Data</small>
+
+      </div>
+
+      <div class="project-buttons">
+
+        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" class="project-btn">
+
+          <i class="fa-solid fa-chart-line"></i>
+
+          <span data-i18n="btnViewApp">View App</span>
+
+        </a>
+
+        <a href="#" class="project-btn coming-soon" title="Coming soon">
+
+          <i class="fa-solid fa-certificate"></i>
+
+          <span data-i18n="btnCertificate">Certificate</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ADD MORE PROJECTS BELOW -->
+
+</div>
+
+  </div>
+
+</div>
+</section>
+     <!-- CONTACT -->
+
+<section id="contact" class="section">
+
+  <div class="contact-card-modern fade-up">
+
+    <div class="contact-left">
+
+      <div class="contact-badge">
+        <i class="fa-solid fa-rocket"></i>
+        <span data-i18n="contactBadge">START A PROJECT</span>
+      </div>
+
+      <h2 data-i18n="contactHeading">Have a Project?</h2>
+
+      <p data-i18n="contactText">
+        Tell us about your idea using the form, or reach out
+        directly — we read every message ourselves.
+      </p>
+
+      <p class="project-intake-note" data-i18n="projectIntakeNote">
+        Accepting both Free Student Portfolio Projects and Paid Freelance Projects.
+      </p>
+
+      <div class="contact-links">
+
+        <a href="mailto:happy.trustcore@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span data-i18n="contactEmailLink">Send us an Email</span>
+        </a>
+
+        <a href="https://wa.me/491774936972" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="contactWhatsapp">Chat on WhatsApp</span>
+        </a>
+
+        <a href="https://t.me/+491774936972" target="_blank" rel="noopener">
+          <i class="fa-brands fa-telegram"></i>
+          <span data-i18n="contactTelegram">Message us on Telegram</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <form id="projectForm">
+
+      <label for="name" data-i18n="formNameLabel">Your Name</label>
+
+      <input
+  id="name"
+  type="text"
+  placeholder="Your Name"
+  data-i18n-placeholder="formNamePlaceholder"
+  required
+/>
+
+      <label for="email" data-i18n="formEmailLabel">Email Address</label>
+
+      <input
+  id="email"
+  type="email"
+  placeholder="Email Address"
+  data-i18n-placeholder="formEmailPlaceholder"
+  required
+/>
+
+      <label for="projectType" data-i18n="formIntakeLabel">Project Type</label>
+
+      <select id="projectType">
+        <option value="free" data-i18n="projectIntakeFree">Free Student Portfolio Project</option>
+        <option value="paid" data-i18n="projectIntakePaid">Paid Freelance Project</option>
+      </select>
+
+      <label for="message" data-i18n="formMessageLabel">Project Description</label>
+<textarea
+  id="message"
+  placeholder="Tell us about your project..."
+  data-i18n-placeholder="formMessagePlaceholder"
+  required></textarea>
+
+      <button type="submit" class="btn btn-primary" data-i18n="formSubmit">
+  Send Request
+</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+    </main>
+
+    <footer>
+
+  <div class="footer-content">
+
+    <div class="footer-column">
+
+      <h3 data-i18n="footerFollowUs">FOLLOW US</h3>
+
+      <div class="footer-social">
+
+        <a href="https://www.instagram.com/happy_trustcore_technologies" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+
+        <a href="https://github.com/Happy-TrustCore" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61592475843407" target="_blank" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
+          Facebook
+        </a>
+
+        <a href="#" class="coming-soon" title="Coming soon">
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3 data-i18n="footerLegal">LEGAL</h3>
+
+      <div class="footer-social">
+
+        <a href="impressum.html">
+          <i class="fa-solid fa-file-lines"></i>
+          <span data-i18n="footerImpressum">Imprint</span>
+        </a>
+
+        <a href="datenschutz.html">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span data-i18n="footerDatenschutz">Privacy Policy</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="copyright" data-i18n="copyright">
+    © 2026 Happy TrustCore Technologies | Berlin Germany
+  </p>
+
+</footer>
+
+   <!-- AI CHATBOT -->
+
+<div class="chatbot">
+
+  <button id="chatButton" class="chat-button" aria-label="Open chat with TrustCore">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+
+  <div id="chatWindow" class="chat-window">
+
+    <div class="chat-header">
+
+      <span>
+        <i class="fa-solid fa-comment-dots"></i>
+        TrustCore Chat
+      </span>
+
+      <button id="closeChat" aria-label="Close chat window">
+        ×
+      </button>
+
+    </div>
+
+    <div id="chatMessages" class="chat-messages">
+
+      <div class="bot-message" data-i18n="chatGreeting">
+        Hi! How can we help you today?
+      </div>
+
+      <button id="chatStartLead" class="chat-quick-btn" data-i18n="chatStartLeadBtn">
+        Start a Project
+      </button>
+
+    </div>
+
+    <div class="chat-input">
+
+      <input
+      id="userMessage"
+      type="text"
+      placeholder="Ask something..."
+      data-i18n-placeholder="chatPlaceholder"
+      />
+
+      <button id="sendMessage" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
