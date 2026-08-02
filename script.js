@@ -71,7 +71,7 @@ const translations = {
 
     // Pricing
     pricingHeading: "PRICING",
-    pricingSubheading: "One-Time Service Packages (€160 / €299 / €400 flat payment).",
+    pricingSubheading: "One-Time Service Packages (€399 / €599 / €999 flat payment).",
     pricingNoSub: "No subscriptions — every package is a flat, one-time payment.",
     package1Name: "Starter",
     package1Desc: "Best for a small business or single-page website.",
@@ -84,13 +84,13 @@ const translations = {
     hugeProjectsDesc: "Huge Projects or Custom Enterprise Software? Talk with our team.",
     hugeProjectsCta: "Talk with Team",
     careHeading: "Post-Project Care",
-    care1Title: "2 Months Free",
-    care1Desc: "2 Months Free Service included after every completed project.",
+    care1Title: "1 Months Free",
+    care1Desc: "1 Months Free Service included after every completed project.",
     care1PriceLabel: "Free — included",
     care2Title: "6 Months Service Plan",
-    care2Desc: "6 Months Extended Service Plan for a one-time fee of €121.",
+    care2Desc: "6 Months Extended Service Plan for a one-time fee of €120.",
     care3Title: "1 Year Premium Service",
-    care3Desc: "1 Year Extended Service Package (€200) – more services available.",
+    care3Desc: "1 Year Extended Service Package (€199) – more services available.",
 
     // Why work with us
     whyHeading: "WHY WORK WITH US",
