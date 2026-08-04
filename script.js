@@ -19,6 +19,8 @@ const translations = {
     badgeReliable: "Fixed-Price Projects",
     ctaPrimary: "Request A Project",
     ctaSecondary: "View Portfolio",
+    bookingButton: "Book a Free 15-Minute Call",
+bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Founders
     founderEmranRole: "Software Engineering Student",

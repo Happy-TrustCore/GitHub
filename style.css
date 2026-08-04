@@ -377,6 +377,62 @@ nav a:hover::after {
   border: 1px solid var(--card-border);
 }
 
+.booking-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 14px;
+  padding: 14px 28px;
+
+  background: linear-gradient(135deg, #4f8cff, #7b5cff);
+  color: white;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 8px 25px rgba(79, 140, 255, 0.35);
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* small shine animation */
+.booking-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-25deg);
+
+  transition: 0.5s;
+}
+
+.booking-btn:hover::before {
+  left: 130%;
+}
+
+.booking-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(79, 140, 255, 0.55);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .booking-btn {
+    width: 100%;
+  }
+}
 /* ========================= */
 /* FOUNDERS */
 /* ========================= */
