@@ -842,15 +842,35 @@ function initContactForm() {
         ? t("projectIntakeFree")
         : t("projectIntakePaid");
 
-    const subject = encodeURIComponent(`New project request from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nProject type: ${projectType}\n\nProject description:\n${message}`
-    );
+   
 
-    window.location.href = `mailto:happy.trustcore@gmail.com?subject=${subject}&body=${body}`;
+fetch("https://happy-trustcore-server.onrender.com/contact", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name,
+    email,
+    projectType,
+    message
+  })
+})
+.then(res => res.json())
+.then(data => {
 
-    statusEl.textContent = t("formSuccess");
+  if (data.success) {
+    statusEl.textContent = "Message sent successfully!";
     form.reset();
+  }
+
+})
+.catch(() => {
+
+  statusEl.textContent = "Something went wrong.";
+
+});
+
   });
 }
 
