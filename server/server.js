@@ -20,6 +20,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/contact", async (req, res) => {
+    console.log("Contact request received");
 
     const {
         name,

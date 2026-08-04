@@ -817,6 +817,7 @@ function initContactForm() {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   form.addEventListener("submit", (e) => {
+    console.log("Form clicked");
     e.preventDefault();
 
     const name = nameInput.value.trim();
@@ -843,7 +844,7 @@ function initContactForm() {
         : t("projectIntakePaid");
 
    
-
+console.log("Sending request");
 fetch("https://happy-trustcore-server.onrender.com/contact", {
   method: "POST",
   headers: {
