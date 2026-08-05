@@ -135,10 +135,12 @@ From business websites to custom dashboards, booking systems,
             <a href="#contact" class="btn btn-primary" data-i18n="ctaPrimary"> Request A Project </a>
 
             <a href="#portfolio" class="btn btn-secondary" data-i18n="ctaSecondary"> View Portfolio </a>
-          <a 
-  href="https://calendar.app.google/3wXLwc7RKcfAymWk9" 
-  target="_blank" 
-  class="btn booking-btn">
+          <a
+  href="https://calendar.app.google/3wXLwc7RKcfAymWk9"
+  target="_blank"
+  rel="noopener"
+  class="btn booking-btn"
+  data-i18n="bookingButton">
   Book a Free 15-Minute Call
 </a>
           </div>
@@ -962,7 +964,7 @@ The languages, frameworks, and tools behind everything we build.
 
       <div class="project-buttons">
 
-        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" class="project-btn">
+        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" rel="noopener" class="project-btn">
           <i class="fa-solid fa-play"></i>
           <span data-i18n="btnTryApp">Try Application</span>
         </a>
@@ -1010,7 +1012,7 @@ The languages, frameworks, and tools behind everything we build.
 
       <div class="project-buttons">
 
-        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" class="project-btn">
+        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" rel="noopener" class="project-btn">
           <i class="fa-solid fa-chart-line"></i>
           <span data-i18n="btnViewProject">View Project</span>
         </a>
@@ -1149,7 +1151,7 @@ The languages, frameworks, and tools behind everything we build.
 
       <div class="project-buttons">
 
-        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" class="project-btn">
+        <a href="https://pattson22.github.io/scientific-calculator/" target="_blank" rel="noopener" class="project-btn">
 
           <i class="fa-solid fa-play"></i>
 
@@ -1202,7 +1204,7 @@ The languages, frameworks, and tools behind everything we build.
 
       <div class="project-buttons">
 
-        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" class="project-btn">
+        <a href="https://github.com/Pattson22/Football-Match-Predictor" target="_blank" rel="noopener" class="project-btn">
 
           <i class="fa-solid fa-chart-line"></i>
 
@@ -1391,6 +1393,11 @@ The languages, frameworks, and tools behind everything we build.
    <!-- AI CHATBOT -->
 
 <div class="chatbot">
+
+  <div id="chatNudge" class="chat-nudge" role="button" tabindex="0">
+    <button id="chatNudgeClose" class="chat-nudge-close" aria-label="Dismiss">×</button>
+    <span data-i18n="chatNudgeText">👋 Need help? Chat with us!</span>
+  </div>
 
   <button id="chatButton" class="chat-button" aria-label="Open chat with TrustCore">
     <i class="fa-solid fa-comment-dots"></i>

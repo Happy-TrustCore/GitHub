@@ -20,7 +20,6 @@ const translations = {
     ctaPrimary: "Request A Project",
     ctaSecondary: "View Portfolio",
     bookingButton: "Book a Free 15-Minute Call",
-bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Founders
     founderEmranRole: "Software Engineer",
@@ -203,6 +202,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatGreeting: "Hi! How can we help you today?",
     chatPlaceholder: "Ask something...",
     chatStartLeadBtn: "Start a Project",
+    chatNudgeText: "👋 Need help? Chat with us!",
     chatLeadAskName: "Great — let's get you started. What's your name?",
     chatLeadAskEmail: "Thanks, {name}! What's the best email to reach you at?",
     chatLeadInvalidEmail: "That doesn't look like a valid email — mind trying again?",
@@ -210,15 +210,40 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatLeadDone:
       "Thanks! I've filled in the contact form below with your details — just check it over and hit \"Send Request\" to reach our team.",
     botServices:
-      "We build business websites, web applications, automation & AI solutions, and provide cloud deployment and support. Check the Services section for details!",
+      "We offer 3 services: Website Development, Custom Web Development, and Redesign & Maintenance. Ask about any of them for pricing and details.",
+    botServiceWebsite:
+      "Website Development (restaurant, business, portfolio & more) starts at €399 — fast, responsive sites for any device.",
+    botServiceCustom:
+      "Custom Web Development — dashboards, booking systems, customer portals — starts at €899, built around your business.",
+    botServiceRedesign:
+      "Redesign & Maintenance: rebuilds from €399, performance fixes from €249, bug fixes from €99, ongoing support from €39/mo.",
     botPricing:
-      "Pricing depends on project scope. Send us a request through the contact form and we'll get back to you with a quote.",
+      "Prices range from €399 (portfolio site) to €1,799 (custom web apps) — every project is scoped individually. Message us for an exact quote.",
+    botSupport:
+      "Support plans: €129 for 3 months, €209 for 6 months (most popular), or €349 for 12 months — billed once for the term.",
+    botCustomQuote:
+      "Big or enterprise project? We scope those individually — just reach out and we'll talk it through.",
+    botProcess:
+      "Our process: Discussion → Planning → Design → Development → Testing → Deployment. Simple and transparent.",
+    botTech:
+      "Frontend: React, Next.js, TypeScript, JavaScript, HTML, CSS. Backend: Node.js, Python. Tools: Git, GitHub, VS Code, Claude AI.",
+    botTeam:
+      "Happy TrustCore Technologies — a Berlin-based dev team founded by Emran Azizi and Patrick Thompson.",
+    botLocation: "We're based in Berlin, Germany.",
+    botResponseTime: "We aim to respond to every message within 12 hours.",
     botPortfolio:
-      "You can see our featured work in the Portfolio section, including a restaurant website, a scientific calculator, and a football analyzer.",
-    botContact: "You can reach us via the contact form below, or email happy.trustcore@gmail.com.",
-    botHello: "Hi! Ask me about our services, portfolio, or how to get in touch.",
+      "Check the Portfolio section: a restaurant website, a JS scientific calculator, and a football match predictor app.",
+    botContact:
+      "Reach us via the contact form below, email, WhatsApp, or Telegram — we reply within 12 hours.",
+    botOverview:
+      "We're a Berlin-based dev team building websites (from €399), custom web apps (from €899), and redesigns (from €99), using React, Next.js, Node.js & Python. Ask me about pricing, process, or the team for more.",
+    botThanks: "You're welcome! Anything else you'd like to know?",
+    botBye: "Thanks for stopping by — reach out anytime you're ready to start a project.",
+    botHello: "Hi! Ask me about services, pricing, process, tech stack, portfolio, or contact.",
     botDefault:
-      "Thanks for your message! For detailed questions, please use the contact form and our team will follow up directly.",
+      "I can help with services, pricing, process, tech, portfolio, or contact — just ask, or type \"start a project\".",
+    botCtaLead: "Ready to start? Type \"start a project\", or",
+    botCtaLinkText: "book a free 15-minute call",
 
     // Misc
     comingSoonToast: "Coming soon — check back later!",
@@ -244,6 +269,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     badgeReliable: "Festpreis-Projekte",
     ctaPrimary: "Projekt anfragen",
     ctaSecondary: "Portfolio ansehen",
+    bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Founders
     founderEmranRole: "Software-Entwickler",
@@ -427,6 +453,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatGreeting: "Hallo! Wie können wir Ihnen heute helfen?",
     chatPlaceholder: "Frag mich etwas...",
     chatStartLeadBtn: "Projekt starten",
+    chatNudgeText: "👋 Brauchen Sie Hilfe? Chatten Sie mit uns!",
     chatLeadAskName: "Super — legen wir los. Wie heißen Sie?",
     chatLeadAskEmail: "Danke, {name}! An welche E-Mail-Adresse dürfen wir uns wenden?",
     chatLeadInvalidEmail: "Das sieht nicht nach einer gültigen E-Mail-Adresse aus — bitte versuchen Sie es erneut.",
@@ -434,15 +461,40 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatLeadDone:
       "Danke! Ich habe das Kontaktformular unten mit Ihren Angaben ausgefüllt — prüfen Sie es kurz und klicken Sie auf \"Anfrage senden\", um unser Team zu erreichen.",
     botServices:
-      "Wir entwickeln Business-Websites, Webanwendungen, Automatisierungs- & KI-Lösungen und bieten Cloud-Deployment und Support. Alle Details finden Sie im Bereich Leistungen!",
+      "Wir bieten 3 Leistungen: Website-Entwicklung, Individuelle Web-Entwicklung und Redesign & Wartung. Fragen Sie nach Details und Preisen.",
+    botServiceWebsite:
+      "Website-Entwicklung (Restaurant, Business, Portfolio & mehr) ab €399 — schnell und responsive auf jedem Gerät.",
+    botServiceCustom:
+      "Individuelle Web-Entwicklung — Dashboards, Buchungssysteme, Kundenportale — ab €899, zugeschnitten auf Ihr Unternehmen.",
+    botServiceRedesign:
+      "Redesign & Wartung: Umbau ab €399, Performance-Optimierung ab €249, Fehlerbehebung ab €99, laufender Support ab €39/Monat.",
     botPricing:
-      "Die Kosten hängen vom Projektumfang ab. Senden Sie uns eine Anfrage über das Kontaktformular und wir melden uns mit einem Angebot.",
+      "Preise reichen von €399 (Portfolio-Website) bis €1.799 (individuelle Webanwendungen) — jedes Projekt wird individuell bewertet. Für ein genaues Angebot schreiben Sie uns.",
+    botSupport:
+      "Support-Abo: €129 für 3 Monate, €209 für 6 Monate (beliebtestes Angebot) oder €349 für 12 Monate — einmalig bezahlt.",
+    botCustomQuote:
+      "Großes oder individuelles Projekt? Das bewerten wir separat — melden Sie sich einfach.",
+    botProcess:
+      "Unser Prozess: Besprechung → Planung → Design → Entwicklung → Testen → Bereitstellung. Klar und transparent.",
+    botTech:
+      "Frontend: React, Next.js, TypeScript, JavaScript, HTML, CSS. Backend: Node.js, Python. Tools: Git, GitHub, VS Code, Claude AI.",
+    botTeam:
+      "Happy TrustCore Technologies — ein Softwareentwicklungsteam mit Sitz in Berlin, gegründet von Emran Azizi und Patrick Thompson.",
+    botLocation: "Wir haben unseren Sitz in Berlin, Deutschland.",
+    botResponseTime: "Wir antworten auf jede Nachricht innerhalb von 12 Stunden.",
     botPortfolio:
-      "Unsere Projekte finden Sie im Bereich Projekte, darunter eine Restaurant-Website, ein wissenschaftlicher Taschenrechner und ein Fußball-Analysetool.",
-    botContact: "Sie erreichen uns über das Kontaktformular unten oder per E-Mail an happy.trustcore@gmail.com.",
-    botHello: "Hallo! Fragen Sie mich gerne nach unseren Leistungen, Projekten oder wie Sie uns erreichen.",
+      "Sehen Sie sich den Bereich Projekte an: eine Restaurant-Website, ein JS-Taschenrechner und eine Fußball-Prognose-App.",
+    botContact:
+      "Sie erreichen uns über das Kontaktformular, per E-Mail, WhatsApp oder Telegram — Antwort innerhalb von 12 Stunden.",
+    botOverview:
+      "Wir sind ein Berliner Entwicklerteam und bauen Websites (ab €399), individuelle Webanwendungen (ab €899) und Redesigns (ab €99) mit React, Next.js, Node.js & Python. Fragen Sie mich nach Preisen, unserem Prozess oder dem Team.",
+    botThanks: "Gern geschehen! Möchten Sie noch etwas wissen?",
+    botBye: "Danke für Ihren Besuch — melden Sie sich jederzeit, wenn Sie starten möchten.",
+    botHello: "Hallo! Fragen Sie mich nach Leistungen, Preisen, Prozess, Tech-Stack, Projekten oder Kontakt.",
     botDefault:
-      "Danke für Ihre Nachricht! Für detaillierte Fragen nutzen Sie bitte das Kontaktformular, unser Team meldet sich direkt bei Ihnen.",
+      "Ich kann bei Leistungen, Preisen, Prozess, Tech, Projekten oder Kontakt helfen — fragen Sie einfach, oder schreiben Sie \"Projekt starten\".",
+    botCtaLead: "Bereit loszulegen? Schreiben Sie \"Projekt starten\", oder",
+    botCtaLinkText: "buchen Sie einen kostenlosen 15-Minuten-Termin",
 
     // Misc
     comingSoonToast: "Demnächst verfügbar — schau bald wieder vorbei!",
@@ -840,12 +892,14 @@ function initChatbot() {
   const userMessageInput = document.getElementById("userMessage");
   const sendMessageBtn = document.getElementById("sendMessage");
   const startLeadBtn = document.getElementById("chatStartLead");
+  const chatNudge = document.getElementById("chatNudge");
+  const chatNudgeClose = document.getElementById("chatNudgeClose");
 
   if (!chatButton || !chatWindow) return;
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const leadTriggerPattern =
-    /(start a project|start my project|hire|want to work|sign me up|get started|let's start|beauftragen|projekt starten|loslegen)/i;
+    /(start a project|start my project|hire|want to work|sign me up|get started|let's start|let's do it|book a call|book a session|schedule a call|i want a website|i need a website|i'd like a website|can you build me|can you make me|i'm ready|count me in|beauftragen|projekt starten|loslegen|termin buchen|anruf buchen|ich möchte eine website|ich brauche eine website|ich bin bereit|lasst uns anfangen)/i;
 
   // Lead-capture state machine: null | "name" | "email" | "message"
   let leadStep = null;
@@ -857,42 +911,339 @@ function initChatbot() {
     bubble.textContent = text;
     chatMessages.appendChild(bubble);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+    return bubble;
+  }
+
+  function showTyping() {
+    const bubble = document.createElement("div");
+    bubble.className = "bot-message";
+    const dots = document.createElement("span");
+    dots.className = "typing-dots";
+    dots.innerHTML = "<span></span><span></span><span></span>";
+    bubble.appendChild(dots);
+    chatMessages.appendChild(bubble);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    return bubble;
   }
 
   function botReply(text) {
-    setTimeout(() => addMessage(text, "bot"), 400);
+    const typingBubble = showTyping();
+    setTimeout(() => {
+      typingBubble.remove();
+      addMessage(text, "bot");
+    }, 700);
+  }
+
+  function getBookingUrl() {
+    return document.querySelector(".booking-btn")?.href || "#contact";
+  }
+
+  // Appends a real, safely-built <a> element (never raw HTML) after the
+  // reply text, so a CTA link can never be an injection vector even though
+  // some replies elsewhere in this file interpolate user-typed text.
+  function botReplyWithBookingLink(text) {
+    const typingBubble = showTyping();
+    setTimeout(() => {
+      typingBubble.remove();
+
+      const bubble = document.createElement("div");
+      bubble.className = "bot-message";
+      bubble.appendChild(document.createTextNode(text + " " + t("botCtaLead") + " "));
+
+      const link = document.createElement("a");
+      link.href = getBookingUrl();
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.className = "chat-inline-link";
+      link.textContent = t("botCtaLinkText");
+      bubble.appendChild(link);
+
+      chatMessages.appendChild(bubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }, 700);
+  }
+
+  function dismissNudge() {
+    chatNudge?.classList.remove("show");
+    sessionStorage.setItem("trustcore-nudge-seen-v2", "1");
+  }
+
+  function openChat() {
+    chatWindow.classList.add("open");
+    dismissNudge();
+    userMessageInput.focus();
   }
 
   chatButton.addEventListener("click", () => {
-    const isOpen = chatWindow.style.display === "flex";
-    chatWindow.style.display = isOpen ? "none" : "flex";
-    if (!isOpen) userMessageInput.focus();
+    const isOpen = chatWindow.classList.contains("open");
+    if (isOpen) {
+      chatWindow.classList.remove("open");
+    } else {
+      openChat();
+    }
   });
 
   closeChat?.addEventListener("click", () => {
-    chatWindow.style.display = "none";
+    chatWindow.classList.remove("open");
   });
 
-  function getBotReply(input) {
+  // Welcome nudge: invites first-time-this-session visitors to chat.
+  // Auto-dismisses on its own after a few seconds if ignored.
+  if (chatNudge && !sessionStorage.getItem("trustcore-nudge-seen-v2")) {
+    let autoHideTimer;
+
+    setTimeout(() => {
+      chatNudge.classList.add("show");
+      autoHideTimer = setTimeout(dismissNudge, 8000);
+    }, 2500);
+
+    chatNudge.addEventListener("click", () => {
+      clearTimeout(autoHideTimer);
+      openChat();
+    });
+    chatNudge.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        clearTimeout(autoHideTimer);
+        openChat();
+      }
+    });
+    chatNudgeClose?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      clearTimeout(autoHideTimer);
+      dismissNudge();
+    });
+  }
+
+  // Topics that steer toward booking a call / starting a project — replies
+  // for these get a CTA + clickable booking link appended.
+  const ctaTopics = new Set([
+    "botOverview",
+    "botServices",
+    "botServiceWebsite",
+    "botServiceCustom",
+    "botServiceRedesign",
+    "botPricing",
+    "botSupport",
+    "botCustomQuote",
+    "botProcess",
+    "botTech",
+    "botPortfolio",
+  ]);
+
+  function getBotReplyKey(input) {
     const text = input.toLowerCase();
 
-    if (/(service|offer|leistung|anbiet)/.test(text)) {
-      return t("botServices");
+    const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const matches = (words) =>
+      new RegExp("\\b(" + words.map(escapeRegex).join("|") + ")\\b", "i").test(text);
+
+    // Ordered most-specific to most-general so a narrow question (e.g. a
+    // specific service or price tier) doesn't get swallowed by a broad
+    // keyword like "service" or "price".
+
+    if (matches(["thank you", "thanks", "thx", "danke", "vielen dank"])) {
+      return "botThanks";
     }
-    if (/(price|cost|quote|budget|preis|kosten)/.test(text)) {
-      return t("botPricing");
+    if (matches(["bye", "goodbye", "see you", "tschüss", "auf wiedersehen", "ciao"])) {
+      return "botBye";
     }
-    if (/(portfolio|project|work|example|projekt|arbeit)/.test(text)) {
-      return t("botPortfolio");
+    if (
+      matches([
+        "enterprise",
+        "huge project",
+        "large project",
+        "big project",
+        "custom quote",
+        "großprojekt",
+        "unternehmenssoftware",
+        "individuelles angebot",
+      ])
+    ) {
+      return "botCustomQuote";
     }
-    if (/(contact|email|reach|talk|kontakt|erreich)/.test(text)) {
-      return t("botContact");
+    if (
+      matches([
+        "subscription",
+        "maintenance plan",
+        "3 months",
+        "6 months",
+        "12 months",
+        "monthly support",
+        "abo",
+        "abonnement",
+        "wartungsplan",
+      ])
+    ) {
+      return "botSupport";
     }
-    if (/(hi|hello|hey|hallo)/.test(text)) {
-      return t("botHello");
+    if (
+      matches([
+        "restaurant website",
+        "supermarket website",
+        "business website",
+        "company website",
+        "portfolio website",
+        "website development",
+        "website-entwicklung",
+        "restaurant-website",
+        "supermarkt",
+        "unternehmens-website",
+      ])
+    ) {
+      return "botServiceWebsite";
+    }
+    if (
+      matches([
+        "custom web",
+        "booking system",
+        "customer portal",
+        "admin dashboard",
+        "business tool",
+        "web application",
+        "web app",
+        "buchungssystem",
+        "kundenportal",
+        "admin-dashboard",
+        "individuelle web",
+      ])
+    ) {
+      return "botServiceCustom";
+    }
+    if (
+      matches([
+        "redesign",
+        "maintenance",
+        "performance optimization",
+        "bug fix",
+        "technical support",
+        "outdated website",
+        "wartung",
+        "fehlerbehebung",
+        "performance-optimierung",
+      ])
+    ) {
+      return "botServiceRedesign";
+    }
+    if (matches(["service", "services", "offer", "leistung", "leistungen", "anbieten"])) {
+      return "botServices";
+    }
+    if (
+      matches([
+        "price",
+        "prices",
+        "cost",
+        "costs",
+        "how much",
+        "budget",
+        "quote",
+        "preis",
+        "preise",
+        "kosten",
+        "wie viel",
+      ])
+    ) {
+      return "botPricing";
+    }
+    if (matches(["process", "how does it work", "steps", "workflow", "ablauf", "prozess"])) {
+      return "botProcess";
+    }
+    if (
+      matches([
+        "technology",
+        "tech stack",
+        "programming language",
+        "framework",
+        "react",
+        "next.js",
+        "node.js",
+        "nodejs",
+        "python",
+        "typescript",
+        "javascript",
+        "technologie",
+        "programmiersprache",
+      ])
+    ) {
+      return "botTech";
+    }
+    if (
+      matches([
+        "who are you",
+        "about you",
+        "founder",
+        "founders",
+        "team",
+        "who is behind",
+        "wer seid ihr",
+        "gründer",
+        "über euch",
+      ])
+    ) {
+      return "botTeam";
+    }
+    if (matches(["where are you", "located", "location", "based in", "standort", "sitz"])) {
+      return "botLocation";
+    }
+    if (
+      matches([
+        "response time",
+        "how fast",
+        "how quickly",
+        "turnaround",
+        "reply time",
+        "antwortzeit",
+        "wie schnell",
+      ])
+    ) {
+      return "botResponseTime";
+    }
+    if (matches(["portfolio", "project", "projects", "work", "example", "projekt", "arbeit"])) {
+      return "botPortfolio";
+    }
+    if (
+      matches([
+        "contact",
+        "email",
+        "reach",
+        "talk",
+        "phone",
+        "whatsapp",
+        "telegram",
+        "kontakt",
+        "erreichen",
+        "telefon",
+      ])
+    ) {
+      return "botContact";
+    }
+    if (matches(["hi", "hello", "hey", "hallo", "guten tag", "moin"])) {
+      return "botHello";
+    }
+    if (
+      matches([
+        "what is this website",
+        "what is happy trustcore",
+        "who is happy trustcore",
+        "tell me about",
+        "tell me everything",
+        "what do you do",
+        "overview",
+        "explain your website",
+        "explain everything",
+        "summary",
+        "worum geht es",
+        "was macht ihr",
+        "was bietet ihr",
+        "erzähl mir",
+        "überblick",
+        "was ist happy trustcore",
+      ])
+    ) {
+      return "botOverview";
     }
 
-    return t("botDefault");
+    return "botDefault";
   }
 
   function startLeadFlow() {
@@ -945,7 +1296,12 @@ function initChatbot() {
       return;
     }
 
-    botReply(getBotReply(text));
+    const replyKey = getBotReplyKey(text);
+    if (ctaTopics.has(replyKey)) {
+      botReplyWithBookingLink(t(replyKey));
+    } else {
+      botReply(t(replyKey));
+    }
   }
 
   startLeadBtn?.addEventListener("click", () => {
