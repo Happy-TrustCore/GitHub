@@ -524,36 +524,6 @@ nav a:hover::after {
   margin: 0;
 }
 
-/* Portfolio Button */
-
-.portfolio-link {
-  display: inline-block;
-
-  margin-top: 10px;
-
-  padding: 7px 14px;
-
-  border-radius: 8px;
-
-  background: var(--accent);
-
-  color: #060a12;
-
-  text-decoration: none;
-
-  font-size: 0.75rem;
-
-  font-weight: 600;
-
-  transition: 0.3s ease;
-}
-
-.portfolio-link:hover {
-  transform: translateY(-2px);
-
-  box-shadow: 0 0 18px rgba(77, 132, 245, 0.4);
-}
-
 /* Mobile Founder Cards */
 
 @media (max-width: 850px) {
@@ -581,12 +551,6 @@ nav a:hover::after {
 
   .founder-info p {
     font-size: 0.75rem;
-  }
-
-  .portfolio-link {
-    padding: 6px 12px;
-
-    font-size: 0.7rem;
   }
 }
 /* SECTIONS */

@@ -11,9 +11,9 @@ const translations = {
 
     // Hero
     heroLabel: "SOFTWARE DEVELOPMENT SERVICE",
-    heroTitle: "Websites, Web Apps & AI Tools, Built By Two Developers In Berlin.",
+    heroTitle: "We Build Websites, Web Apps & Automation Tools For Your Business.",
     heroSubtitle:
-      "We help startups, freelancers, and small businesses build fast, professional digital solutions using modern web technologies, automation, and artificial intelligence.",
+      "From business websites to custom dashboards, booking systems, and ongoing redesigns — we design, build, and maintain digital products using React, Next.js, Node.js, and Python.",
     badgeLocation: "Berlin, Germany",
     badgeDelivery: "Fast Delivery",
     badgeReliable: "Fixed-Price Projects",
@@ -23,30 +23,29 @@ const translations = {
 bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Founders
-    founderEmranRole: "Software Engineering Student",
+    founderEmranRole: "Software Engineer",
     founderEmranDesc:
-      "Likes taking a project from idea to a working, deployed product — see his portfolio below.",
-    founderPatrickRole: "Computer Science Student",
+      "Likes taking a project from idea to a working, deployed product.",
+    founderPatrickRole: "Full-Stack Developer",
     founderPatrickDesc:
       "Builds full-stack projects end to end — from a from-scratch scientific calculator to a football match predictor with a trained ML model.",
-    portfolioLinkText: "View Our Portfolio",
 
     // About
     aboutHeading: "ABOUT HAPPY TRUSTCORE",
     aboutSubheading: "Berlin-based developers building websites, applications, and automation tools.",
-    aboutPanelTitle: "From Coursework To Client Projects",
+    aboutPanelTitle: "From Idea To Launched Product",
     aboutPanelText1:
-      "Happy TrustCore Technologies is founded by Emran Azizi and Patrick Thompson, software engineering and computer science students based in Berlin. We apply what we're learning in school, plus self-taught skills and real project work — like the projects in our portfolio below — to build software for businesses, startups, and individuals.",
+      "Happy TrustCore Technologies is a software development team founded by Emran Azizi and Patrick Thompson, based in Berlin. We combine hands-on engineering experience with modern tools and technologies — like the projects in our portfolio below — to build software for businesses, startups, and individuals.",
     aboutPanelText2:
       "Our goal is simple: working, well-tested software — websites, web apps, automation, and AI tools — at a price that makes sense for a startup or small business, without cutting corners on quality.",
     stackFrontendTitle: "Frontend Development",
-    stackFrontendDesc: "React, Next.js, JavaScript, HTML5, CSS3, and TypeScript.",
+    stackFrontendDesc: "React, Next.js, TypeScript, JavaScript, HTML, and CSS.",
     stackBackendTitle: "Backend Development",
-    stackBackendDesc: "Node.js, Python, APIs, server solutions, and backend architecture.",
-    stackDatabaseTitle: "Database Solutions",
-    stackDatabaseDesc: "SQL, PostgreSQL, MongoDB, database design, and data management.",
-    stackCloudTitle: "Cloud & Development Tools",
-    stackCloudDesc: "Git, GitHub, Docker, Linux, and cloud deployment.",
+    stackBackendDesc: "Node.js and Python, building APIs and server-side logic.",
+    stackDatabaseTitle: "Version Control",
+    stackDatabaseDesc: "Git and GitHub for source control, collaboration, and code management.",
+    stackCloudTitle: "Editor & AI Tools",
+    stackCloudDesc: "VS Code as our editor, with Claude AI supporting our development workflow.",
 
     // Services
     servicesHeading: "OUR SERVICES",
@@ -98,10 +97,10 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Why work with us
     whyHeading: "WHY WORK WITH US",
-    whySubheading: "Two students from Berlin who treat every project like it's going on our own portfolio.",
-    why1Title: "Berlin Student Developers",
+    whySubheading: "A Berlin-based development team that treats every project like it's going into our own portfolio.",
+    why1Title: "Berlin-Based Developers",
     why1Desc:
-      "We're currently studying software engineering and computer science in Berlin, and we apply what we learn directly to client work — not just class projects.",
+      "We're a development team based in Berlin, applying hands-on engineering practices to every client project we take on.",
     why2Title: "Clean, Maintainable Code",
     why2Desc:
       "We write code the way we'd want to inherit it — organized, documented where it matters, and free of dead links or broken features.",
@@ -113,7 +112,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     statBerlinDesc: "Based in Germany",
     stat2Desc: "Core Technologies",
     stat3Desc: "Response Time Goal",
-    stat4Desc: "Student Founders",
+    stat4Desc: "Founders",
 
     // Process
     processHeading: "OUR DEVELOPMENT PROCESS",
@@ -134,12 +133,9 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     // Technologies
     techHeading: "OUR DEVELOPMENT SKILLS",
     techSubheading: "The languages, frameworks, and tools behind everything we build.",
-    tech1Title: "Website Development",
-    tech2Title: "Web Applications",
-    tech2Desc: "Frontend applications, dashboards, APIs, and business tools.",
-    tech3Title: "Automation & AI",
-    tech3Desc: "Python automation, API integration, and AI-powered solutions.",
-    tech4Title: "Development Tools",
+    tech1Title: "Frontend Development",
+    tech2Title: "Backend Development",
+    tech3Title: "Development Tools",
 
     // Portfolio
     portfolioHeading: "OUR PROJECTS",
@@ -183,14 +179,12 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     contactEmailLink: "Send us an Email",
     contactWhatsapp: "Chat on WhatsApp",
     contactTelegram: "Message us on Telegram",
-    projectIntakeNote: "Accepting both Free Student Portfolio Projects and Paid Freelance Projects.",
+    projectIntakeNote: "Accepting both Free Portfolio Projects and Paid Freelance Projects.",
     formNameLabel: "Your Name",
     formNamePlaceholder: "Your Name",
     formEmailLabel: "Email Address",
     formEmailPlaceholder: "Email Address",
-    formIntakeLabel: "Project Type",
-    projectIntakeFree: "Free Student Portfolio Project",
-    projectIntakePaid: "Paid Freelance Project",
+    formServiceLabel: "Service Needed",
     formMessageLabel: "Project Description",
     formMessagePlaceholder: "Tell us about your project...",
     formSubmit: "Send Request",
@@ -212,7 +206,6 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatLeadAskName: "Great — let's get you started. What's your name?",
     chatLeadAskEmail: "Thanks, {name}! What's the best email to reach you at?",
     chatLeadInvalidEmail: "That doesn't look like a valid email — mind trying again?",
-    chatLeadAskType: "Is this a free student portfolio project, or a paid freelance project?",
     chatLeadAskMessage: "Got it. In a sentence or two, what's the project about?",
     chatLeadDone:
       "Thanks! I've filled in the contact form below with your details — just check it over and hit \"Send Request\" to reach our team.",
@@ -243,9 +236,9 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Hero
     heroLabel: "SOFTWARE-ENTWICKLUNG",
-    heroTitle: "Websites, Webanwendungen & KI-Tools, gebaut von zwei Entwicklern in Berlin.",
+    heroTitle: "Wir entwickeln Websites, Webanwendungen & Automatisierungstools für Ihr Unternehmen.",
     heroSubtitle:
-      "Wir sind zwei Studenten der Softwaretechnik und entwickeln funktionierende Software für Startups, Freelancer und kleine Unternehmen, die echte Ergebnisse ohne Agenturpreise brauchen.",
+      "Von Business-Websites über individuelle Dashboards und Buchungssysteme bis hin zu laufenden Redesigns — wir entwerfen, entwickeln und pflegen digitale Produkte mit React, Next.js, Node.js und Python.",
     badgeLocation: "Berlin, Deutschland",
     badgeDelivery: "Schnelle Lieferung",
     badgeReliable: "Festpreis-Projekte",
@@ -253,30 +246,29 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     ctaSecondary: "Portfolio ansehen",
 
     // Founders
-    founderEmranRole: "Student der Softwaretechnik",
+    founderEmranRole: "Software-Entwickler",
     founderEmranDesc:
-      "Bringt Projekte gerne von der Idee bis zum fertigen, live geschalteten Produkt — siehe sein Portfolio unten.",
-    founderPatrickRole: "Student der Informatik",
+      "Bringt Projekte gerne von der Idee bis zum fertigen, live geschalteten Produkt.",
+    founderPatrickRole: "Full-Stack-Entwickler",
     founderPatrickDesc:
       "Baut Full-Stack-Projekte von Grund auf — vom selbst geschriebenen wissenschaftlichen Taschenrechner bis zum Fußball-Prognosetool mit trainiertem ML-Modell.",
-    portfolioLinkText: "Unser Portfolio ansehen",
 
     // About
     aboutHeading: "ÜBER HAPPY TRUSTCORE",
     aboutSubheading: "Entwickler aus Berlin, die Websites, Anwendungen und Automatisierungstools bauen.",
-    aboutPanelTitle: "Vom Studium zu echten Kundenprojekten",
+    aboutPanelTitle: "Von der Idee zum fertigen Produkt",
     aboutPanelText1:
-      "Happy TrustCore Technologies wurde von Emran Azizi und Patrick Thompson gegründet, Studenten der Softwaretechnik und Informatik mit Sitz in Berlin. Wir wenden an, was wir im Studium lernen, kombiniert mit autodidaktischen Fähigkeiten und echter Projekterfahrung — wie den Projekten in unserem Portfolio unten —, um Software für Unternehmen, Startups und Privatpersonen zu bauen.",
+      "Happy TrustCore Technologies ist ein Softwareentwicklungsteam, gegründet von Emran Azizi und Patrick Thompson mit Sitz in Berlin. Wir verbinden praktische Entwicklungserfahrung mit modernen Tools und Technologien — wie den Projekten in unserem Portfolio unten —, um Software für Unternehmen, Startups und Privatpersonen zu bauen.",
     aboutPanelText2:
       "Unser Ziel ist einfach: funktionierende, gut getestete Software — Websites, Webanwendungen, Automatisierung und KI-Tools — zu einem Preis, der für ein Startup oder kleines Unternehmen Sinn ergibt, ohne Abstriche bei der Qualität.",
     stackFrontendTitle: "Frontend-Entwicklung",
-    stackFrontendDesc: "React, Next.js, JavaScript, HTML5, CSS3 und TypeScript.",
+    stackFrontendDesc: "React, Next.js, TypeScript, JavaScript, HTML und CSS.",
     stackBackendTitle: "Backend-Entwicklung",
-    stackBackendDesc: "Node.js, Python, APIs, Serverlösungen und Backend-Architektur.",
-    stackDatabaseTitle: "Datenbanklösungen",
-    stackDatabaseDesc: "SQL, PostgreSQL, MongoDB, Datenbankdesign und Datenmanagement.",
-    stackCloudTitle: "Cloud- & Entwicklungstools",
-    stackCloudDesc: "Git, GitHub, Docker, Linux und Cloud-Deployment.",
+    stackBackendDesc: "Node.js und Python zur Entwicklung von APIs und serverseitiger Logik.",
+    stackDatabaseTitle: "Versionskontrolle",
+    stackDatabaseDesc: "Git und GitHub für Versionskontrolle, Zusammenarbeit und Code-Management.",
+    stackCloudTitle: "Editor & KI-Tools",
+    stackCloudDesc: "VS Code als bevorzugter Editor, unterstützt durch Claude AI in unserem Entwicklungsworkflow.",
 
     // Services
     servicesHeading: "UNSERE LEISTUNGEN",
@@ -328,10 +320,10 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
 
     // Why work with us
     whyHeading: "WARUM MIT UNS ARBEITEN",
-    whySubheading: "Zwei Studenten aus Berlin, die jedes Projekt so behandeln, als käme es ins eigene Portfolio.",
-    why1Title: "Studentische Entwickler aus Berlin",
+    whySubheading: "Ein Entwicklerteam aus Berlin, das jedes Projekt so behandelt, als käme es ins eigene Portfolio.",
+    why1Title: "Entwickler aus Berlin",
     why1Desc:
-      "Wir studieren derzeit Softwaretechnik und Informatik in Berlin und wenden das Gelernte direkt in Kundenprojekten an — nicht nur in Studienarbeiten.",
+      "Wir sind ein Entwicklerteam mit Sitz in Berlin und wenden praxiserprobte Entwicklungsmethoden bei jedem Kundenprojekt an.",
     why2Title: "Sauberer, wartbarer Code",
     why2Desc:
       "Wir schreiben Code so, wie wir ihn selbst übernehmen möchten — organisiert, dokumentiert wo es zählt, ohne tote Links oder kaputte Funktionen.",
@@ -343,7 +335,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     statBerlinDesc: "Mit Sitz in Deutschland",
     stat2Desc: "Kerntechnologien",
     stat3Desc: "Ziel-Reaktionszeit",
-    stat4Desc: "Studentische Gründer",
+    stat4Desc: "Gründer",
 
     // Process
     processHeading: "UNSER ENTWICKLUNGSPROZESS",
@@ -364,12 +356,9 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     // Technologies
     techHeading: "UNSERE ENTWICKLUNGS-SKILLS",
     techSubheading: "Die Sprachen, Frameworks und Tools hinter allem, was wir bauen.",
-    tech1Title: "Website-Entwicklung",
-    tech2Title: "Webanwendungen",
-    tech2Desc: "Frontend-Anwendungen, Dashboards, APIs und Business-Tools.",
-    tech3Title: "Automatisierung & KI",
-    tech3Desc: "Python-Automatisierung, API-Integration und KI-gestützte Lösungen.",
-    tech4Title: "Entwicklungstools",
+    tech1Title: "Frontend-Entwicklung",
+    tech2Title: "Backend-Entwicklung",
+    tech3Title: "Entwicklungstools",
 
     // Portfolio
     portfolioHeading: "UNSERE PROJEKTE",
@@ -418,9 +407,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     formNamePlaceholder: "Ihr Name",
     formEmailLabel: "E-Mail-Adresse",
     formEmailPlaceholder: "E-Mail-Adresse",
-    formIntakeLabel: "Projektart",
-    projectIntakeFree: "Kostenloses Portfolio-Projekt",
-    projectIntakePaid: "Bezahltes Freelance-Projekt",
+    formServiceLabel: "Benötigte Leistung",
     formMessageLabel: "Projektbeschreibung",
     formMessagePlaceholder: "Erzählen Sie uns von Ihrem Projekt...",
     formSubmit: "Anfrage senden",
@@ -443,7 +430,6 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     chatLeadAskName: "Super — legen wir los. Wie heißen Sie?",
     chatLeadAskEmail: "Danke, {name}! An welche E-Mail-Adresse dürfen wir uns wenden?",
     chatLeadInvalidEmail: "Das sieht nicht nach einer gültigen E-Mail-Adresse aus — bitte versuchen Sie es erneut.",
-    chatLeadAskType: "Handelt es sich um ein kostenloses Portfolio-Projekt oder ein bezahltes Freelance-Projekt?",
     chatLeadAskMessage: "Verstanden. Worum geht es bei dem Projekt kurz?",
     chatLeadDone:
       "Danke! Ich habe das Kontaktformular unten mit Ihren Angaben ausgefüllt — prüfen Sie es kurz und klicken Sie auf \"Anfrage senden\", um unser Team zu erreichen.",
@@ -812,8 +798,6 @@ function initContactForm() {
 
     const name = document.getElementById("name")?.value.trim();
     const email = document.getElementById("email")?.value.trim();
-    const projectType =
-      document.getElementById("projectType")?.value || "not specified";
     const message = document.getElementById("message")?.value.trim();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -833,13 +817,12 @@ function initContactForm() {
  * Fills the visible contact form (used by the chatbot lead-capture flow)
  * and scrolls it into view so the visitor can review before sending.
  */
-function fillContactForm({ name, email, projectType, message }) {
+function fillContactForm({ name, email, message }) {
   const form = document.getElementById("projectForm");
   if (!form) return;
 
   if (name) document.getElementById("name").value = name;
   if (email) document.getElementById("email").value = email;
-  if (projectType) document.getElementById("projectType").value = projectType;
   if (message) document.getElementById("message").value = message;
 
   form.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -864,7 +847,7 @@ function initChatbot() {
   const leadTriggerPattern =
     /(start a project|start my project|hire|want to work|sign me up|get started|let's start|beauftragen|projekt starten|loslegen)/i;
 
-  // Lead-capture state machine: null | "name" | "email" | "type" | "message"
+  // Lead-capture state machine: null | "name" | "email" | "message"
   let leadStep = null;
   let leadData = {};
 
@@ -932,15 +915,6 @@ function initChatbot() {
         return;
       }
       leadData.email = text;
-      leadStep = "type";
-      botReply(t("chatLeadAskType"));
-      return;
-    }
-
-    if (leadStep === "type") {
-      leadData.projectType = /(free|student|portfolio|kostenlos)/i.test(text)
-        ? "free"
-        : "paid";
       leadStep = "message";
       botReply(t("chatLeadAskMessage"));
       return;
