@@ -195,8 +195,7 @@ bookingButton: "Kostenlosen 15-Minuten-Termin buchen",
     formErrorEmpty: "Please fill in all fields.",
     formErrorEmail: "Please enter a valid email address.",
     formSuccess:
-      "Opening your email client to send this request. If nothing opens, email us directly at happy.trustcore@gmail.com.",
-
+"Your message was sent successfully. We will contact you soon.",
     // Footer
     footerFollowUs: "FOLLOW US",
     footerLegal: "LEGAL",
@@ -473,9 +472,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initProjectsOverlay();
   initProjectFilters();
-  initContactForm();
   initChatbot();
   initComingSoonLinks();
+  initContactForm();
 });
 
 /* ========================= */
@@ -797,86 +796,80 @@ function initProjectFilters() {
 }
 
 /* ========================= */
-/* CONTACT FORM (mailto)      */
+/* CONTACT FORM EMAIL API    */
 /* ========================= */
 
 function initContactForm() {
   const form = document.getElementById("projectForm");
   if (!form) return;
 
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const projectTypeInput = document.getElementById("projectType");
-  const messageInput = document.getElementById("message");
-
-  let statusEl = form.querySelector(".form-status");
-  if (!statusEl) {
-    statusEl = document.createElement("p");
-    statusEl.className = "form-status";
-    form.appendChild(statusEl);
-  }
-
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  form.addEventListener("submit", (e) => {
-    console.log("Form clicked");
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
+    const name = document.getElementById("name")?.value.trim();
+    const email = document.getElementById("email")?.value.trim();
+    const projectType =
+      document.getElementById("projectType")?.value || "not specified";
+    const message = document.getElementById("message")?.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!name || !email || !message) {
-      statusEl.textContent = t("formErrorEmpty");
-      statusEl.classList.add("error");
+      alert(t("formErrorEmpty"));
       return;
     }
 
     if (!emailPattern.test(email)) {
-      statusEl.textContent = t("formErrorEmail");
-      statusEl.classList.add("error");
+      alert(t("formErrorEmail"));
       return;
     }
 
-    statusEl.classList.remove("error");
+    const submitButton = form.querySelector("button[type='submit']");
 
-    const projectType =
-      projectTypeInput?.value === "free"
-        ? t("projectIntakeFree")
-        : t("projectIntakePaid");
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
 
-   
-console.log("Sending request");
-fetch("https://happy-trustcore-server.onrender.com/contact", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    name,
-    email,
-    projectType,
-    message
-  })
-})
-.then(res => res.json())
-.then(data => {
+    try {
+      const response = await fetch("http://localhost:5000/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          projectType,
+          message,
+        }),
+      });
 
-  if (data.success) {
-    statusEl.textContent = "Message sent successfully!";
-    form.reset();
-  }
+      const data = await response.json();
 
-})
-.catch(() => {
+      if (!response.ok) {
+        throw new Error(data.error || "Email sending failed");
+      }
 
-  statusEl.textContent = "Something went wrong.";
+      alert("Message sent successfully! We will contact you soon.");
 
-});
+      form.reset();
 
+    } catch (error) {
+      console.error("Email error:", error);
+
+      alert(
+        "Could not send your message. Please email us directly at happy.trustcore@gmail.com."
+      );
+
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = t("formSubmit");
+      }
+    }
   });
 }
-
 /**
  * Fills the visible contact form (used by the chatbot lead-capture flow)
  * and scrolls it into view so the visitor can review before sending.
