@@ -798,6 +798,60 @@ nav a:hover::after {
 
   line-height: 1.6;
 }
+
+.service-sublist {
+  list-style: none;
+
+  text-align: left;
+
+  margin-top: 18px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.service-sublist li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 9px 12px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  color: var(--text-muted);
+
+  font-size: 0.85rem;
+
+  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+
+.service-sublist li:hover {
+  background: rgba(77, 132, 245, 0.12);
+
+  color: white;
+
+  transform: translateX(4px);
+}
+
+.service-sublist .sub-icon {
+  flex-shrink: 0;
+
+  font-size: 1rem;
+
+  line-height: 1;
+}
 /* ========================= */
 /* MODERN CONTACT CARD */
 /* ========================= */
@@ -2681,6 +2735,236 @@ textarea:focus-visible {
 
 .care-header h3 {
   font-size: 1.3rem;
+}
+
+/* ========================= */
+/* PRICE TABLES */
+/* ========================= */
+
+.price-tables-grid {
+  align-items: stretch;
+
+  margin-bottom: 25px;
+}
+
+.price-table {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.price-table-header {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding-bottom: 20px;
+
+  margin-bottom: 4px;
+
+  border-bottom: 1px solid var(--card-border);
+}
+
+.price-table-header i {
+  display: inline-block;
+
+  font-size: 2.1rem;
+
+  color: var(--accent);
+
+  margin-bottom: 16px;
+
+  transition: 0.3s ease;
+}
+
+.price-table:hover .price-table-header i {
+  transform: scale(1.12);
+
+  text-shadow: 0 0 20px rgba(77, 132, 245, 0.5);
+}
+
+.price-table-header h3 {
+  color: white;
+
+  font-size: 1.1rem;
+}
+
+.price-table-columns {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 2px 12px 10px 54px;
+
+  font-size: 0.68rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  color: var(--text-muted);
+
+  opacity: 0.6;
+}
+
+.price-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px;
+
+  border-radius: 12px;
+
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.price-row + .price-row {
+  margin-top: 3px;
+}
+
+.price-row:hover {
+  background: rgba(77, 132, 245, 0.08);
+
+  transform: translateX(4px);
+}
+
+.price-row-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 34px;
+
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: rgba(77, 132, 245, 0.12);
+
+  border: 1px solid rgba(77, 132, 245, 0.25);
+
+  font-size: 0.95rem;
+}
+
+.price-row-name {
+  flex: 1;
+
+  color: var(--text-muted);
+
+  font-size: 0.87rem;
+
+  line-height: 1.3;
+}
+
+.price-row:hover .price-row-name {
+  color: white;
+}
+
+.price-row-value {
+  flex-shrink: 0;
+
+  padding: 6px 13px;
+
+  border-radius: 20px;
+
+  background: rgba(77, 132, 245, 0.1);
+
+  border: 1px solid rgba(77, 132, 245, 0.3);
+
+  color: var(--accent);
+
+  font-weight: 700;
+
+  font-size: 0.82rem;
+
+  white-space: nowrap;
+
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.price-row:hover .price-row-value {
+  background: var(--accent);
+
+  border-color: var(--accent);
+
+  color: white;
+}
+
+.price-row-value small {
+  margin-left: 1px;
+
+  font-weight: 600;
+
+  font-size: 0.68rem;
+
+  opacity: 0.75;
+}
+
+/* ========================= */
+/* SUBSCRIPTION PLANS */
+/* ========================= */
+
+.subscription-grid {
+  align-items: stretch;
+}
+
+.price-per-month {
+  margin-top: -6px;
+
+  margin-bottom: 10px;
+
+  color: var(--text-muted);
+
+  font-size: 0.85rem;
+}
+
+.subscription-featured {
+  position: relative;
+
+  border-color: var(--accent);
+
+  box-shadow: 0 10px 35px rgba(77, 132, 245, 0.18);
+}
+
+.subscription-badge {
+  position: absolute;
+
+  top: -13px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 4px 14px;
+
+  border-radius: 20px;
+
+  background: var(--accent);
+
+  color: white;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  box-shadow: 0 4px 14px rgba(77, 132, 245, 0.4);
 }
 
 @media (max-width: 850px) {
