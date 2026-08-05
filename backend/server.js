@@ -14,23 +14,48 @@ app.get("/", (req, res) => {
   res.send("Backend is running successfully");
 });
 
-app.post("/api/test", async (req, res) => {
+app.post("/api/send-email", async (req, res) => {
   try {
+    const { name, email, projectType, message } = req.body;
+
     const result = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "happytrustcore@gmail.com",
-      subject: "Test email from Happy TrustCore",
-      html: "<h1>Resend works!</h1>",
+      to: "happytrustcore.github@gmail.com",
+      subject: `New Project Request from ${name}`,
+      html: `
+        <h2>New Project Request</h2>
+
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Project Type:</strong> ${projectType}</p>
+
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
     });
 
-    res.json(result);
+    if (result.error) {
+      return res.status(400).json({
+        success: false,
+        error: result.error.message,
+      });
+    }
+
+    res.json({
+      success: true,
+      message: "Email sent successfully",
+    });
+
   } catch (error) {
     console.error(error);
+
     res.status(500).json({
+      success: false,
       error: error.message,
     });
   }
 });
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
