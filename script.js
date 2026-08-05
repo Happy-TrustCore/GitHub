@@ -796,14 +796,14 @@ function initProjectFilters() {
 }
 
 /* ========================= */
-/* CONTACT FORM EMAIL API    */
+/* CONTACT FORM VALIDATION   */
 /* ========================= */
 
 function initContactForm() {
   const form = document.getElementById("projectForm");
   if (!form) return;
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const name = document.getElementById("name")?.value.trim();
@@ -822,51 +822,6 @@ function initContactForm() {
     if (!emailPattern.test(email)) {
       alert(t("formErrorEmail"));
       return;
-    }
-
-    const submitButton = form.querySelector("button[type='submit']");
-
-    if (submitButton) {
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
-    }
-
-    try {
-      const response = await fetch("http://localhost:5000/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          projectType,
-          message,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Email sending failed");
-      }
-
-      alert("Message sent successfully! We will contact you soon.");
-
-      form.reset();
-
-    } catch (error) {
-      console.error("Email error:", error);
-
-      alert(
-        "Could not send your message. Please email us directly at happy.trustcore@gmail.com."
-      );
-
-    } finally {
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.textContent = t("formSubmit");
-      }
     }
   });
 }
