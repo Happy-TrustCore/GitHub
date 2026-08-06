@@ -502,6 +502,11 @@ const translations = {
 };
 
 let currentLang = localStorage.getItem("trustcore-lang") || "en";
+(function () {
+  emailjs.init({
+    publicKey: "dhcp5pb",
+  });
+})();
 
 function t(key) {
   return (translations[currentLang] && translations[currentLang][key]) || key;
@@ -850,6 +855,8 @@ function initContactForm() {
 
     const name = document.getElementById("name")?.value.trim();
     const email = document.getElementById("email")?.value.trim();
+    const service =
+      document.getElementById("service")?.value || "Not selected";
     const message = document.getElementById("message")?.value.trim();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -863,6 +870,26 @@ function initContactForm() {
       alert(t("formErrorEmail"));
       return;
     }
+
+    const serviceID = "service_dhcp5pb";
+    const templateID = "template_5aacjfg";
+
+    const templateParams = {
+      name: name,
+      email: email,
+      service: service,
+      message: message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams)
+      .then(() => {
+        alert(t("formSuccess"));
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Something went wrong. Please try again.");
+      });
   });
 }
 /**
