@@ -504,7 +504,7 @@ const translations = {
 let currentLang = localStorage.getItem("trustcore-lang") || "en";
 (function () {
   emailjs.init({
-    publicKey: "dhcp5pb",
+    publicKey: "yiJWr1NEJ0HZFJ12X",
   });
 })();
 
@@ -843,7 +843,7 @@ function initProjectFilters() {
 }
 
 /* ========================= */
-/* CONTACT FORM VALIDATION   */
+/* CONTACT FORM VALIDATION + EMAILJS */
 /* ========================= */
 
 function initContactForm() {
@@ -881,14 +881,15 @@ function initContactForm() {
       message: message,
     };
 
-    emailjs.send(serviceID, templateID, templateParams)
+    emailjs
+      .send(serviceID, templateID, templateParams)
       .then(() => {
         alert(t("formSuccess"));
         form.reset();
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        alert("Something went wrong. Please try again.");
+        alert("Email sending failed. Please try again.");
       });
   });
 }
