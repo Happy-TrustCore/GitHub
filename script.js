@@ -510,7 +510,7 @@ let currentLang = localStorage.getItem("trustcore-lang") || "en";
     return;
   }
   emailjs.init({
-    publicKey: "yiJWr1NEJ0HZFJ12X",
+    publicKey: "QQnA_sLKWUpjNJL3e",
   });
 })();
 
@@ -884,8 +884,8 @@ function initContactForm() {
       return;
     }
 
-    const serviceID = "service_dhcp5pb";
-    const templateID = "template_5aacjfg";
+    const serviceID = "service_nj925pr";
+    const templateID = "template_9ur9atn";
 
     const templateParams = {
       name: name,
