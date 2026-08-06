@@ -856,7 +856,7 @@ function initContactForm() {
     const name = document.getElementById("name")?.value.trim();
     const email = document.getElementById("email")?.value.trim();
     const service =
-      document.getElementById("service")?.value || "Not selected";
+  document.getElementById("serviceType")?.value || "Not selected";
     const message = document.getElementById("message")?.value.trim();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
