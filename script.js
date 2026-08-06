@@ -503,6 +503,12 @@ const translations = {
 
 let currentLang = localStorage.getItem("trustcore-lang") || "en";
 (function () {
+  if (typeof emailjs === "undefined") {
+    console.error(
+      "EmailJS SDK failed to load (check the CDN <script> tag / network/ad-blocker)."
+    );
+    return;
+  }
   emailjs.init({
     publicKey: "yiJWr1NEJ0HZFJ12X",
   });
@@ -856,7 +862,7 @@ function initContactForm() {
     const name = document.getElementById("name")?.value.trim();
     const email = document.getElementById("email")?.value.trim();
     const service =
-  document.getElementById("serviceType")?.value || "Not selected";
+      document.getElementById("serviceType")?.value || "Not selected";
     const message = document.getElementById("message")?.value.trim();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -868,6 +874,13 @@ function initContactForm() {
 
     if (!emailPattern.test(email)) {
       alert(t("formErrorEmail"));
+      return;
+    }
+
+    if (typeof emailjs === "undefined") {
+      alert(
+        "Email service failed to load. Please check your connection and try again, or contact us directly."
+      );
       return;
     }
 
@@ -889,7 +902,9 @@ function initContactForm() {
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        alert("Email sending failed. Please try again.");
+        const reason =
+          (error && (error.text || error.message)) || "Unknown error";
+        alert(`Email sending failed: ${reason}. Please try again.`);
       });
   });
 }
