@@ -885,7 +885,7 @@ function initContactForm() {
     }
 
     const serviceID = "service_nj925pr";
-    const templateID = "template_9ur9atn";
+    const templateID = "template_txkrh2f";
 
     const templateParams = {
       name: name,
