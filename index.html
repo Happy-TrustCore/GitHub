@@ -1279,7 +1279,7 @@ The languages, frameworks, and tools behind everything we build.
 
     </div>
 
-    <form id="projectForm">
+    <form id="projectForm" novalidate>
 
       <label for="name" data-i18n="formNameLabel">Your Name</label>
 
@@ -1290,6 +1290,7 @@ The languages, frameworks, and tools behind everything we build.
   data-i18n-placeholder="formNamePlaceholder"
   required
 />
+      <span class="field-error" id="name-error"></span>
 
       <label for="email" data-i18n="formEmailLabel">Email Address</label>
 
@@ -1300,6 +1301,7 @@ The languages, frameworks, and tools behind everything we build.
   data-i18n-placeholder="formEmailPlaceholder"
   required
 />
+      <span class="field-error" id="email-error"></span>
 
       <label for="serviceType" data-i18n="formServiceLabel">Service Needed</label>
 
@@ -1315,10 +1317,13 @@ The languages, frameworks, and tools behind everything we build.
   placeholder="Tell us about your project..."
   data-i18n-placeholder="formMessagePlaceholder"
   required></textarea>
+      <span class="field-error" id="message-error"></span>
 
-      <button type="submit" class="btn btn-primary" data-i18n="formSubmit">
+      <button type="submit" class="btn btn-primary" id="formSubmitBtn" data-i18n="formSubmit">
   Send Request
 </button>
+
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
 
     </form>
 

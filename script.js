@@ -187,6 +187,7 @@ const translations = {
     formMessageLabel: "Project Description",
     formMessagePlaceholder: "Tell us about your project...",
     formSubmit: "Send Request",
+    formSending: "Sending...",
     formErrorEmpty: "Please fill in all fields.",
     formErrorEmail: "Please enter a valid email address.",
     formSuccess:
@@ -437,10 +438,11 @@ const translations = {
     formMessageLabel: "Projektbeschreibung",
     formMessagePlaceholder: "Erzählen Sie uns von Ihrem Projekt...",
     formSubmit: "Anfrage senden",
+    formSending: "Wird gesendet...",
     formErrorEmpty: "Bitte füllen Sie alle Felder aus.",
     formErrorEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     formSuccess:
-      "Ihr E-Mail-Programm wird geöffnet, um diese Anfrage zu senden. Falls sich nichts öffnet, schreiben Sie uns direkt an happy.trustcore@gmail.com.",
+      "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.",
 
     // Footer
     footerFollowUs: "FOLGEN SIE UNS",
@@ -856,8 +858,52 @@ function initContactForm() {
   const form = document.getElementById("projectForm");
   if (!form) return;
 
+  const statusEl = document.getElementById("formStatus");
+  const submitBtn = document.getElementById("formSubmitBtn");
+  const submitLabel = submitBtn ? submitBtn.textContent : "";
+
+  function setStatus(message, kind) {
+    if (!statusEl) return;
+    statusEl.textContent = message;
+    statusEl.className = "form-status show" + (kind ? ` ${kind}` : "");
+  }
+
+  function clearStatus() {
+    if (!statusEl) return;
+    statusEl.textContent = "";
+    statusEl.className = "form-status";
+  }
+
+  function setFieldError(id, message) {
+    const field = document.getElementById(id);
+    const errorEl = document.getElementById(`${id}-error`);
+    if (field) field.classList.toggle("field-invalid", Boolean(message));
+    if (errorEl) {
+      errorEl.textContent = message || "";
+      errorEl.classList.toggle("show", Boolean(message));
+    }
+  }
+
+  function clearFieldError(e) {
+    setFieldError(e.target.id, "");
+  }
+
+  ["name", "email", "message"].forEach((id) => {
+    const field = document.getElementById(id);
+    if (field) field.addEventListener("input", clearFieldError);
+  });
+
+  function setLoading(isLoading) {
+    if (!submitBtn) return;
+    submitBtn.disabled = isLoading;
+    submitBtn.innerHTML = isLoading
+      ? `<span class="btn-spinner"></span><span>${t("formSending")}</span>`
+      : submitLabel;
+  }
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    clearStatus();
 
     const name = document.getElementById("name")?.value.trim();
     const email = document.getElementById("email")?.value.trim();
@@ -867,19 +913,37 @@ function initContactForm() {
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!name || !email || !message) {
-      alert(t("formErrorEmpty"));
-      return;
+    setFieldError("name", "");
+    setFieldError("email", "");
+    setFieldError("message", "");
+
+    let hasError = false;
+    if (!name) {
+      setFieldError("name", t("formErrorEmpty"));
+      hasError = true;
+    }
+    if (!email) {
+      setFieldError("email", t("formErrorEmpty"));
+      hasError = true;
+    } else if (!emailPattern.test(email)) {
+      setFieldError("email", t("formErrorEmail"));
+      hasError = true;
+    }
+    if (!message) {
+      setFieldError("message", t("formErrorEmpty"));
+      hasError = true;
     }
 
-    if (!emailPattern.test(email)) {
-      alert(t("formErrorEmail"));
+    if (hasError) {
+      setStatus(t("formErrorEmpty"), "error");
+      document.getElementById(!name ? "name" : !email ? "email" : "message")?.focus();
       return;
     }
 
     if (typeof emailjs === "undefined") {
-      alert(
-        "Email service failed to load. Please check your connection and try again, or contact us directly."
+      setStatus(
+        "Email service failed to load. Please check your connection and try again, or contact us directly.",
+        "error"
       );
       return;
     }
@@ -894,17 +958,23 @@ function initContactForm() {
       message: message,
     };
 
+    setLoading(true);
+    setStatus(t("formSending"), "sending");
+
     emailjs
       .send(serviceID, templateID, templateParams)
       .then(() => {
-        alert(t("formSuccess"));
+        setStatus(t("formSuccess"), "success");
         form.reset();
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
         const reason =
           (error && (error.text || error.message)) || "Unknown error";
-        alert(`Email sending failed: ${reason}. Please try again.`);
+        setStatus(`Email sending failed: ${reason}. Please try again.`, "error");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   });
 }

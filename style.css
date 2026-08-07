@@ -982,6 +982,10 @@ nav a:hover::after {
   color: var(--accent);
 
   font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
 }
 
 /* ========================= */
@@ -1122,12 +1126,98 @@ nav a:hover::after {
 
 #projectForm .btn-primary {
   margin-top: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 #projectForm .btn-primary:hover {
   transform: translateY(-3px);
 
   box-shadow: 0 0 30px rgba(77, 132, 245, 0.5);
+}
+
+#projectForm .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#projectForm .btn-primary:disabled:hover {
+  transform: none;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* Inline field validation */
+
+#projectForm input.field-invalid,
+#projectForm select.field-invalid,
+#projectForm textarea.field-invalid {
+  border-color: #f56565;
+  box-shadow: 0 0 12px rgba(245, 101, 101, 0.2);
+}
+
+.field-error {
+  display: none;
+  margin-top: -8px;
+  font-size: 0.78rem;
+  color: #f56565;
+}
+
+.field-error.show {
+  display: block;
+}
+
+/* Submit status message */
+
+.form-status {
+  display: none;
+  margin-top: 4px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.form-status.show {
+  display: block;
+}
+
+.form-status.sending {
+  background: rgba(77, 132, 245, 0.08);
+  border: 1px solid rgba(77, 132, 245, 0.25);
+  color: var(--accent);
+}
+
+.form-status.success {
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+
+.form-status.error {
+  background: rgba(245, 101, 101, 0.08);
+  border: 1px solid rgba(245, 101, 101, 0.3);
+  color: #f56565;
+}
+
+/* Button loading spinner */
+
+.btn-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(6, 10, 18, 0.35);
+  border-top-color: #060a12;
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* ========================= */
 /* MOBILE RESPONSIVE */
@@ -1190,7 +1280,40 @@ nav a:hover::after {
   #projectForm {
     width: 100%;
   }
+}
 
+@media (max-width: 480px) {
+  .contact-card-modern {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .contact-badge {
+    font-size: 0.72rem;
+    padding: 6px 12px;
+  }
+
+  .contact-left h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-left p {
+    font-size: 0.9rem;
+  }
+
+  #projectForm input,
+  #projectForm select,
+  #projectForm textarea {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  #projectForm .btn-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
   /* OTHER SECTIONS */
 
   .section {
